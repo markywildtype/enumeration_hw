@@ -23,9 +23,12 @@ const arrayTasks = {
     return result;
 	},
 
-	// sum: function (arr) {
-
-	// },
+	sum: function(arr){
+    const result = arr.reduce(function(counter, current){
+      return counter + current;
+    }, 0);
+    return result;
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 
