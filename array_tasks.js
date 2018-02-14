@@ -16,9 +16,12 @@ const arrayTasks = {
     return arr;
 	},
 
-	// square: function (arr) {
-
-	// },
+	square: function(arr){
+    const result = arr.map(function(number){
+      return number ** 2;
+    });
+    return result;
+	},
 
 	// sum: function (arr) {
 
