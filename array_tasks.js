@@ -37,13 +37,28 @@ const arrayTasks = {
     return filteredArray;
 	},
 
-	// findIndexesOf: function (arr, itemToFind) {
-
+	// findIndexesOf: function(arr, itemToFind){
+  //   const indexes = [];
+  //   const indexArray = arr.map(function(item){
+  //     if(item === itemToFind){
+  //       return arr.indexOf(item);
+  //     }
+  //   });
+  //   console.log(indexArray);
 	// },
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+    const evens = arr.filter(function(item){
+        return item % 2 === 0;
+      });
+    const squared = evens.map(function(item){
+      return item ** 2;
+    });
+    const sum = squared.reduce(function(counter, current){
+      return counter + current;
+    }, 0);
+    return sum;
+	}
 
 	// ----------- EXTENSION ------------
 
